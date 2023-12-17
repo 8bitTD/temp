@@ -2,7 +2,8 @@
 This app displays the temperature outside
 
 ![test](https://github.com/8bitTD/temp/assets/19583059/587281ca-a255-4a95-a917-61f47c2f26ed)
-
+## execution environment
+* Windows10 64bit
 ## hot to use
 * When you run it, something like the attached image will be displayed at the bottom right of the screen.
 
