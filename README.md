@@ -6,7 +6,7 @@ This app displays the temperature outside
 ## hot to use
 * When you run it, something like the attached image will be displayed at the bottom right of the screen.
 
-![image](https://github.com/8bitTD/temp/assets/19583059/23ab2e72-53d9-4f99-9f6f-c3dde93414de)
+　![image](https://github.com/8bitTD/temp/assets/19583059/23ab2e72-53d9-4f99-9f6f-c3dde93414de)
 * Move by left-dragging the mouse, exit by right-clicking.
 * Please access the file below and enter your latitude, longitude and api_token.
 ```
