@@ -14,6 +14,7 @@ C:\Users\(user_name)\Documents\script\Rust
 ```
 ![image](https://github.com/8bitTD/temp/assets/19583059/6bdb7d04-bb0e-4d6a-bc54-69d7d4dbe7a9)
 * Please access the following site to obtain api_token.
+
 https://home.openweathermap.org/users/sign_in
 https://home.openweathermap.org/api_keys
 
