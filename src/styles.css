@@ -1,0 +1,50 @@
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+:root {
+  font-family: Inter, Avenir, Meiryo, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 1000;
+  color: #0f0f0f;
+  background-color: #f6f6f600;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  overflow: hidden;
+  user-select: none /* 選択を禁止する */
+}
+
+label{
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+  transform: translate(-5px,-12px);
+}
+
+.weather, .temp{
+  transform: translate(0px,-2px);
+}
+
+.temp{
+  margin-left: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    /*background-color: #2f2f2f;*/
+    background-color: rgba(0,128,255,0.0);
+  }
+}

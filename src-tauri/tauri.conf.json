@@ -1,0 +1,66 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "temp",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true,
+        "setPosition": true,
+        "setCursorPosition": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "test",
+      "icon": [
+        "icons/icon.png",
+        "icons/icon.ico"
+      ],
+      "windows": {
+        "wix": {
+          "language": "ja-JP"
+        }
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": false,
+        "title": "temp",
+        "width": 160,
+        "height": 28,
+        "x": 1527,
+        "y": 1047,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "transparent": true
+      }
+    ]
+  }
+}
