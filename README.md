@@ -1,7 +1,4 @@
-# Tauri + Vanilla
+# what is this?
+This app displays the temperature outside
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+![test](https://github.com/8bitTD/temp/assets/19583059/587281ca-a255-4a95-a917-61f47c2f26ed)
