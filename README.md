@@ -19,3 +19,14 @@ C:\Users\(user_name)\Documents\script\Rust
 
 >[get api_token](https://home.openweathermap.org/api_keys)
 
+## steps to execute
+* Please install git in advance.
+* Please install Rust in advance.
+* Please enable Cargo to run tauri in advance.
+```
+git clone https://github.com/8bitTD/temp
+cd temp
+cargo tauri dev
+cargo tauri build
+run ./src-tauri/target/release/temp.exe
+```
