@@ -1,7 +1,7 @@
 import { invoke } from "@tauri-apps/api/tauri";
 import { appWindow } from "@tauri-apps/api/window";
-let is_enter = false;
-let is_drag = false; 
+let isEnter = false;
+let isDrag = false; 
 
 async function get_weather(){
   const [lantitude, longitude, apitoken] = await invoke("get_info") as any;
@@ -18,12 +18,12 @@ window.onload = function(){get_weather()};
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("container")?.addEventListener("mouseenter", (e) => {
     e.preventDefault();
-    is_enter = true;
+    isEnter = true;
   });
 
   document.getElementById("container")?.addEventListener("mouseleave", (e) => {
     e.preventDefault();
-    if (is_drag === false){ is_enter = false; }
+    if (isDrag === false){ isEnter = false; }
   });
 
   document.getElementById("container")?.addEventListener("contextmenu", (e) => {
@@ -32,16 +32,16 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener('mousemove', (e) => {
-    if (is_enter && is_drag){
+    if (isEnter && isDrag){
       invoke("move_window", {sx: e.screenX, sy: e.screenY});
     }
   });
   window.addEventListener('mousedown', (e) => {
-    if (e.button === 0){ is_drag = true; }
+    if (e.button === 0){ isDrag = true; }
   });
   window.addEventListener('mouseup', (e) => {
     if (e.button === 0) { 
-      is_drag = false; 
+      isDrag = false; 
       invoke("save_window");
     } 
   });

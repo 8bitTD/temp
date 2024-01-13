@@ -84,7 +84,6 @@ async fn get_weather(lantitude:f32, longitude: f32, apitoken: String ) -> Weathe
         apitoken,
     );
     let res: serde_json::Value = reqwest::Client::new().get(&url).send().await.unwrap().json().await.unwrap();
-    //println!("{:?}", res);
     if res["main"] == serde_json::Value::Null{return wi;}
     let temp = &res["main"]["temp"].as_f64().unwrap();
     let weather = &res["weather"][0]["description"].as_str().unwrap().to_string();
@@ -122,7 +121,6 @@ fn set_data(state: tauri::State<Mutex<MyApp>>, lantitude:f32, longitude: f32, ap
     my_app.jsn.longitude = longitude;
     my_app.jsn.api_token = apitoken;
     my_app.jsn.save_json();
-    println!("{:?}", my_app);
 }
 
 fn main() {
