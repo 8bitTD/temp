@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/setting.ts" defer></script>
+    <style>
+      .logo.vite:hover {
+        filter: drop-shadow(0 0 2em #747bff);
+      }
+
+      .logo.typescript:hover {
+        filter: drop-shadow(0 0 2em #2d79c7);
+      }
+    </style>
+    <link rel="shortcut icon" href="/src/assets/favicon.ico">
+  </head>
+
+  <body>
+    <div class="setting_layout">
+      <div class="column_layout">
+        <label>経度</label>
+        <input class="setting_input" id="lantitude">
+      </div>
+      <div class="column_layout">
+        <label>緯度</label>
+        <input class="setting_input" id="longitude">
+      </div> 
+      <div class="column_layout">
+        <label>API</label>
+        <input class="setting_input" id="apitoken">
+      </div> 
+      <a href="https://home.openweathermap.org/api_keys" target="_blank">OpenWeatherのAPIキーについて</a>
+      <div class="column_layout">
+        <button id="setting_btn_exec">決定</button>
+        <button id="setting_btn_close">閉じる</button>
+      </div> 
+    </div>
+  </body>
+</html>
