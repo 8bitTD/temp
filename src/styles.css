@@ -53,10 +53,3 @@ label{
 .temp{
   margin-left: 10px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #f6f6f6;
-    background-color: rgba(0,128,255,0.0);
-  }
-}
