@@ -18,6 +18,10 @@ temp.exe
 
 ![image](https://github.com/8bitTD/temp/assets/19583059/e7cef7a5-b2ef-49ef-94d1-73966c94c2b2)
 
+* マウスの左ドラッグで位置を変更できます。
+* マウスの右クリックで終了します。
+
+  
 # Tauri + Vanilla TS
 
 This template should help get you started developing with Tauri in vanilla HTML, CSS and Typescript.
