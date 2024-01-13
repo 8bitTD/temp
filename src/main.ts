@@ -3,7 +3,7 @@ import { appWindow } from "@tauri-apps/api/window";
 let isEnter = false;
 let isDrag = false; 
 
-async function get_weather(){
+async function getWeather(){
   const [lantitude, longitude, apitoken] = await invoke("get_info") as any;
   let res = await invoke("get_weather",{lantitude: lantitude, longitude: longitude, apitoken: apitoken}) as any;
   if (res.temp === "-- ? --"){document.location.assign("setting.html");}
@@ -14,7 +14,7 @@ async function get_weather(){
   (document.getElementById("temp") as HTMLLabelElement).innerHTML = temp;
 }
 
-window.onload = function(){get_weather()};
+window.onload = function(){getWeather()};
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("container")?.addEventListener("mouseenter", (e) => {
     e.preventDefault();
@@ -45,5 +45,5 @@ window.addEventListener("DOMContentLoaded", () => {
       invoke("save_window");
     } 
   });
-  setInterval(() => { get_weather(); }, 60000);
+  setInterval(() => { getWeather(); }, 60000);
 });
