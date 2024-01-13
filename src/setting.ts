@@ -10,11 +10,6 @@ window.onload = async function(){
     appWindow.center();
 };
 window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("setting_btn_close")?.addEventListener("click",(e) => {
-    e.preventDefault;
-    appWindow.close();
-  });
-
   document.getElementById("setting_btn_exec")?.addEventListener("click",(e) => {
     e.preventDefault;
     let lantitude = Number((document.getElementById("lantitude") as HTMLInputElement).value);
@@ -22,5 +17,10 @@ window.addEventListener("DOMContentLoaded", () => {
     let apitoken = (document.getElementById("apitoken") as HTMLInputElement).value;
     invoke("set_data", {lantitude: lantitude, longitude: longitude, apitoken: apitoken});
     document.location.assign("index.html");
+  });
+  
+  document.getElementById("setting_btn_close")?.addEventListener("click",(e) => {
+    e.preventDefault;
+    appWindow.close();
   });
 });
