@@ -20,7 +20,7 @@ export default defineConfig(async () => ({
     rollupOptions: {
       input: {
         index: resolve("", 'index.html'),
-        test: resolve("", 'setting.html'),
+        setting: resolve("", 'setting.html'),
       },
     },
   }
